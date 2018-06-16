@@ -75,18 +75,12 @@ public class Question {
     }
 
     /**
-     * determineOperator method -- this method will determine operator
+     * getOperator method -- this method returns value of operator
      * whether addition or subtraction
-     * @return true if operator is add, false otherwise
+     * @return 0 if operator is add, 1 otherwise
      */
 
-    public boolean determineOperator() {
-        boolean returnMe = false;
-        if(operator == 0) // if the question type is addition
-            returnMe = true;
-        else
-        if(operator == 1) // if the question type is subtraction
-            returnMe = false;
-        return returnMe;
+    public int getOperator() {
+        return operator;
     }
 }

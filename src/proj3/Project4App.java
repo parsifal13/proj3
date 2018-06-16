@@ -47,17 +47,17 @@ public class Project4App {
 
             //  this if statement determine the answer
             if (answer[i] == theQuestion.determineAnswer()  //  if add answer is correct
-                    && (theQuestion.determineOperator()))	{
+                    && (theQuestion.getOperator() == 0))	{
                 addCorrect += 1;    //  add 1
                 JOptionPane.showMessageDialog(null, "Congratulations! You got it correct!");
             }
             else if (answer[i] == theQuestion.determineAnswer() //  if sub answer is correct
-                    && (theQuestion.determineOperator() == false))	{
+                    && (theQuestion.getOperator() == 1))	{
                 subCorrect += 1;
                 JOptionPane.showMessageDialog(null, "Congratulations! You got it correct!");
             }
             else if	(answer[i] != theQuestion.determineAnswer()
-                    && theQuestion.determineOperator())	{
+                    && theQuestion.getOperator() == 0)	{
                 addIncorrect += 1;
                 JOptionPane.showMessageDialog(null, "Sorry, "
                         + theQuestion.toString() + " = " + theQuestion.determineAnswer());
