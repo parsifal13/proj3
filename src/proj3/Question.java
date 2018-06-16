@@ -18,7 +18,6 @@ public class Question {
     private int firstOperand = 0;
     private int secondOperand = 0;
     private int operator;
-    private int[] answer = new int[25];
 
     /**
      * Question method -- default constructor. it generates random integer number
@@ -78,7 +77,7 @@ public class Question {
     /**
      * determineOperator method -- this method will determine operator
      * whether addition or subtraction
-     * @return
+     * @return true if operator is add, false otherwise
      */
 
     public boolean determineOperator() {
