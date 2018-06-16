@@ -30,8 +30,6 @@ public class Project4App {
         int subCorrect = 0; //  number of correct answers from sub problems
         int subIncorrect = 0;   //  number of incorrect answers from sub problems
         double percentage = 0;  //  percent of correct answers
-        double percentOutput = 0;   //  percent with double decimal places
-
 
         //for loop
         for (int i = 0; i < num_problems; i++) {
@@ -70,7 +68,6 @@ public class Project4App {
 
             //  calculate correct percentage
             percentage = 100.0 * (addCorrect + subCorrect) / (addCorrect + addIncorrect + subCorrect + subIncorrect);
-            percentOutput = Double.parseDouble(String.format("%.2f", percentage));
 
             //  FOR EXTRA CREDIT
 	//		if (addCorrect + subCorrect == 10 && i == 9)
@@ -84,6 +81,6 @@ public class Project4App {
         JOptionPane.showMessageDialog(null, "Addition:" + "\n" + "You got "
                 + addCorrect + " correct, and " + addIncorrect + " incorrect."+ "\n" + "Subtraction:" + "\n"
                 + "You got " + subCorrect + " correct, and " + subIncorrect + " incorrect." + "\n"
-                + "The percent correct is " + percentOutput + ".");
+                + "The percent correct is " + Double.parseDouble(String.format("%.2f", percentage)) + ".");
     }
 }
