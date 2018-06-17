@@ -25,10 +25,10 @@ public class Project4App {
 
         //stores converted answers
         int[] answer = new int[25];
-        int addCorrect = 0; //  number of correct answers from add problems
-        int addIncorrect = 0;   //  number of incorrect answers from add problems
-        int subCorrect = 0; //  number of correct answers from sub problems
-        int subIncorrect = 0;   //  number of incorrect answers from sub problems
+        int addCorrect = 0; //  correct answers from add problems
+        int addIncorrect = 0;   //  incorrect answers from add problems
+        int subCorrect = 0; //  correct answers from sub problems
+        int subIncorrect = 0;   //  incorrect answers from sub problems
         double percentage = 0;  //  percent of correct answers
 
         //for loop
